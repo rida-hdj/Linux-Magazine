@@ -29,7 +29,7 @@ body.light {
 body {
   font-family: "JetBrains Mono", "IBM Plex Sans Arabic";
   min-height: 100vh;
-  background: var(--bg-main);
+  background: linear-gradient(0deg, var(--bg-main), var(--bg-codeblock));
   direction: rtl;
   display: flex;
   flex-direction: column;
@@ -227,7 +227,6 @@ button {
   margin: 30px auto;
 }
 .footer {
-  background: var(--bg-card);
   padding: 20px;
   text-align: center;
   margin-top: auto;
