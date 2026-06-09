@@ -57,7 +57,7 @@ button {
   transition: var(--transition);
 }
 .read:hover {
-  color: var(--text-headline);
+  color: #fffffe;
   background: var(--purple-primary);
 }
 .code-block {
