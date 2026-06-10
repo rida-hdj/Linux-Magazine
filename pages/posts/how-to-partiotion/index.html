@@ -71,9 +71,11 @@
       <h2 class="post-chapter">طريقة استخدام CFDISK وتقسيم القرص:</h2>
       <p class="post-text">اول شيء تحدد القرص اللي عندك واللي تبغى تقسمه</p>
       <div class="code-block">
-        <span>$</span> lsblk <br />
-        NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINTS <br />
-        sda 8:0 0 298.1G 0 disk
+        <pre>
+<span>$</span> lsblk
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINTS 
+sda 8:0 0 298.1G 0 disk
+        </pre>
       </div>
       <p class="post-text">
         التقسيمة اللي بنسويها بتكون التقسيمة البدائية الطبيعية
@@ -91,7 +93,9 @@
         <li>Root: باقي المساحة المتبقية</li>
       </ul>
       <p class="post-text">يلا نبدأ , الحين بنستخدم CFDISK</p>
-      <div class="code-block"><span>$</span> sudo cfdisk /dev/sda</div>
+      <div class="code-block">
+        <pre><span>$</span> sudo cfdisk /dev/sda</pre>
+      </div>
       <p class="post-text">
         بتطلع لك واجهة تختار فيها GPT لو جهازك UEFI وبتختار DOS لو جهازك BIOS
         المهم بعدها تختار القرص تضغط عليه وتكتب المساحة اللي بتكون لل EFI اللي
@@ -112,20 +116,24 @@
       </p>
       <h2 class="post-chapter">UEFI:</h2>
       <div class="code-block">
-        <span>$</span> sudo mkfs.fat -F 32 /dev/sda1<br />
-        sudo mkfs.ext4 /dev/sda2<br />
-        sudo mkswap /dev/sda3<br />
-        <br />
-        # Enable Swap<br />
-        sudo swapon /dev/sda3
+        <pre>
+<span>$</span> sudo mkfs.fat -F 32 /dev/sda1
+sudo mkfs.ext4 /dev/sda2
+sudo mkswap /dev/sda3
+        
+# Enable Swap
+sudo swapon /dev/sda3
+        </pre>
       </div>
       <h2 class="post-chapter">BIOS:</h2>
       <div class="code-block">
-        <span>$</span> sudo mkfs.ext4 /dev/sda1<br />
-        sudo mkswap /dev/sda2<br />
-        <br />
-        # Enable Swap<br />
-        sudo swapon /dev/sda2
+        <pre>
+<span>$</span> sudo mkfs.ext4 /dev/sda1
+sudo mkswap /dev/sda2
+        
+# Enable Swap
+sudo swapon /dev/sda2
+        </pre>
       </div>
       <p class="post-text">وكذا نكون خلصنا</p>
     </div>

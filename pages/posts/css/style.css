@@ -10,11 +10,11 @@
   font-size: 2rem;
 }
 .post-start .title span {
-  color: var(--purple-primary);
+  color: var(--color-primary);
   animation: color-change 6s infinite ease-in-out;
 }
 .post-start .tag {
-  color: var(--purple-primary);
+  color: var(--color-primary);
   background-color: rgba(127, 85, 240, 0.15);
   padding: 8px 7px;
   border-radius: 6px;
@@ -33,7 +33,7 @@
   width: fit-content;
 }
 .post-start .author a {
-  color: var(--purple-primary);
+  color: var(--color-primary);
 }
 .post-start .details {
   color: var(--text-paragraph);
@@ -42,7 +42,7 @@
   padding: 20px;
 }
 .post h3 {
-  color: var(--purple-primary);
+  color: var(--color-primary);
 }
 .post-text {
   color: var(--text-paragraph);

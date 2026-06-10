@@ -14,14 +14,14 @@
   margin-bottom: 20px;
 }
 .posts h2.title:hover {
-  color: var(--purple-primary);
+  color: var(--color-primary);
 }
 .posts h2.title::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  background: var(--purple-primary);
+  background: var(--color-primary);
   width: 10px;
   height: 100%;
   border-radius: 17px;
@@ -41,11 +41,11 @@
   cursor: pointer;
 }
 .posts .post-card:hover {
-  border-color: var(--purple-primary);
+  border-color: var(--color-primary);
   transform: translateY(-10px);
 }
 .posts .post-card .tag {
-  color: var(--purple-primary);
+  color: var(--color-primary);
   background-color: rgba(127, 85, 240, 0.15);
   padding: 8px 7px;
   border-radius: 6px;

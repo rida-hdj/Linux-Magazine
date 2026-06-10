@@ -21,7 +21,6 @@ if (savedTheme === "light") {
 }
 button.addEventListener("click", () => {
   body.classList.toggle("light");
-
   const isLight = body.classList.contains("light");
 
   if (isLight) {

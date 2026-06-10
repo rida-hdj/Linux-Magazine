@@ -2,11 +2,11 @@
   --bg-main: #0c111a;
   --bg-card: #141b27;
   --bg-codeblock: #1c2536;
-  --purple-primary: #00b4d8;
-  --purple-secondary: #0077b6;
+  --color-primary: #00b4d8;
+  --color-secondary: #0077b6;
   --text-headline: #ffffff;
   --text-paragraph: #94a3b8;
-  --accent-green: #10b981;
+  --accent-color: #10b981;
   --border-color: #1e293b;
   --transition: all 0.2s ease-in-out;
 }
@@ -14,11 +14,11 @@ body.light {
   --bg-main: #f1f5f9;
   --bg-card: #ffffff;
   --bg-codeblock: #e2e8f0;
-  --purple-primary: #0284c7;
-  --purple-secondary: #bae6fd;
+  --color-primary: #0284c7;
+  --color-secondary: #bae6fd;
   --text-headline: #0f172a;
   --text-paragraph: #475569;
-  --accent-green: #059669;
+  --accent-color: #059669;
   --border-color: #cbd5e1;
 }
 * {
@@ -42,7 +42,7 @@ a {
 }
 hr {
   width: 20%;
-  color: var(--purple-primary);
+  color: var(--color-primary);
   margin: auto;
 }
 button {
@@ -50,24 +50,32 @@ button {
   cursor: pointer;
 }
 .read {
-  color: var(--purple-primary);
-  border: 1px solid var(--purple-primary);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   border-radius: 10px;
   padding: 10px 19px;
   transition: var(--transition);
 }
 .read:hover {
   color: #fffffe;
-  background: var(--purple-primary);
+  background: var(--color-primary);
 }
 .code-block {
   background: var(--bg-codeblock);
   border-radius: 10px;
-  border-left: 7px solid var(--purple-primary);
+  border-left: 7px solid var(--color-primary);
   color: var(--text-headline);
-  padding: 15px;
+  width: 90%;
+  padding: 17px;
   direction: ltr;
   margin: 25px auto;
+}
+.code-block pre span {
+  color: var(--accent-color);
+}
+pre {
+  font-family: "JetBrains Mono" !important;
+  background: var(--bg-card) !important;
 }
 .header {
   display: flex;
@@ -75,7 +83,7 @@ button {
   align-items: center;
   padding: 20px;
   background: var(--bg-card);
-  border-bottom: 3px solid var(--purple-primary);
+  border-bottom: 3px solid var(--color-primary);
   box-shadow: 0 10px 12px 0 rgba(127, 85, 240, 0.3);
 }
 .header .logo a {
@@ -87,7 +95,7 @@ button {
   gap: 10px;
 }
 .header .logo span {
-  color: var(--purple-primary);
+  color: var(--color-primary);
   animation: color-change 6s infinite ease-in-out;
 }
 .header .links .ham-menu span {
@@ -122,14 +130,14 @@ button {
   transition: var(--transition);
 }
 .header .links ul li:hover a {
-  color: var(--purple-primary);
+  color: var(--color-primary);
 }
 .header .links ul .switch-mode {
   background: transparent;
   border: none;
   padding: 16px 0;
   transition: var(--transition);
-  color: var(--purple-primary);
+  color: var(--color-primary);
 }
 .landing {
   margin: 60px auto;
@@ -142,16 +150,16 @@ button {
   font-size: 2rem;
 }
 .landing .title span {
-  color: var(--purple-primary);
+  color: var(--color-primary);
   animation: color-change 6s infinite ease-in-out;
 }
 @keyframes color-change {
   0%,
   100% {
-    color: var(--purple-primary);
+    color: var(--color-primary);
   }
   50% {
-    color: var(--accent-green);
+    color: var(--accent-color);
   }
 }
 .landing .details {
@@ -173,14 +181,14 @@ button {
   margin-bottom: 20px;
 }
 .recent-posts h2.title:hover {
-  color: var(--purple-primary);
+  color: var(--color-primary);
 }
 .recent-posts h2.title::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  background: var(--purple-primary);
+  background: var(--color-primary);
   width: 10px;
   height: 100%;
   border-radius: 17px;
@@ -200,11 +208,11 @@ button {
   cursor: pointer;
 }
 .recent-posts .post-card:hover {
-  border-color: var(--purple-primary);
+  border-color: var(--color-primary);
   transform: translateY(-10px);
 }
 .recent-posts .post-card .tag {
-  color: var(--purple-primary);
+  color: var(--color-primary);
   background-color: rgba(127, 85, 240, 0.15);
   padding: 8px 7px;
   border-radius: 6px;
@@ -235,7 +243,7 @@ button {
   color: var(--text-headline);
 }
 .footer a {
-  color: var(--purple-primary);
+  color: var(--color-primary);
 }
 @media (min-width: 375px) and (max-width: 786px) {
   .header {
@@ -250,7 +258,7 @@ button {
     left: 20px;
     top: 75px;
     background: var(--bg-card);
-    border: 2px solid var(--purple-primary);
+    border: 2px solid var(--color-primary);
     padding: 10px 15px;
     border-radius: 0 0 14px 14px;
     width: 275px;
@@ -314,11 +322,11 @@ button {
   :root {
     --bg-main: #f7f7fb;
     --bg-card: #ffffff;
-    --purple-primary: #6d4aff;
-    --purple-secondary: #b7a7ff;
+    --color-primary: #6d4aff;
+    --color-secondary: #b7a7ff;
     --text-headline: #0f0f14;
     --text-paragraph: #4b5563;
-    --accent-green: #1f9d6e;
+    --accent-color: #1f9d6e;
     --border-color: #e5e7eb;
   }
 }
