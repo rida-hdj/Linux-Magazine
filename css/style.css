@@ -76,6 +76,8 @@ button {
 pre {
   font-family: "JetBrains Mono" !important;
   background: var(--bg-card) !important;
+  padding: 8px !important;
+  border-radius: 8px;
 }
 .header {
   display: flex;
@@ -84,7 +86,7 @@ pre {
   padding: 20px;
   background: var(--bg-card);
   border-bottom: 3px solid var(--color-primary);
-  box-shadow: 0 10px 12px 0 rgba(127, 85, 240, 0.3);
+  box-shadow: 0 10px 12px 0 rgba(0, 180, 216, 0.3);
 }
 .header .logo a {
   font-weight: bold;
@@ -203,7 +205,7 @@ pre {
   padding: 20px;
   border-radius: 15px;
   border: 1px solid var(--border-color);
-  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
   transition: var(--transition);
   cursor: pointer;
 }
@@ -213,7 +215,7 @@ pre {
 }
 .recent-posts .post-card .tag {
   color: var(--color-primary);
-  background-color: rgba(127, 85, 240, 0.15);
+  background-color: rgba(0, 180, 216, 0.15);
   padding: 8px 7px;
   border-radius: 6px;
   display: block;
