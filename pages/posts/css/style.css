@@ -60,6 +60,37 @@
   margin: 40px auto;
   font-size: 1.7rem;
 }
+.post blockquote {
+  background: var(--bg-codeblock);
+  border-right: 4px solid var(--color-primary);
+  padding: 16px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  color: var(--text-paragraph);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.code-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.code-block ul li {
+  margin: 8px 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.code-block ul li a {
+  color: var(--color-primary);
+  word-break: break-all;
+}
+
+.code-block ul li a:hover {
+  text-decoration: underline;
+}
+
 .code-block pre {
   background: #16161a;
   color: #fffffe;
@@ -69,6 +100,6 @@
   font-family: monospace;
   line-height: 1.6;
 
-  white-space: pre; /* KEY: preserves your tree exactly */
-  overflow-x: auto; /* allows horizontal scroll if needed */
+  white-space: pre;
+  overflow-x: auto;
 }
